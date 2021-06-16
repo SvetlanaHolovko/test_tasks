@@ -1,15 +1,13 @@
-# training - Учебный проект BRAINSCLOUD
+# training - Тестовые задания
 
-### Выполнил проект: Светлана Головко
+### Выполнил: Светлана Головко
 
 ## Технологии
 
-### MOGO and BoxActive
+### CUDA
 
 - HTML
 - CSS
 - JQuery
-- Slick Slider
 - Flexbox
 - BEM-Naming
-- SVG-Sprite
