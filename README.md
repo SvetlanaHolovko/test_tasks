@@ -1,4 +1,4 @@
-# training - Тестовые задания
+# test_tasks - Тестовые задания
 
 ### Выполнил: Светлана Головко
 
@@ -11,3 +11,13 @@
 - JQuery
 - Flexbox
 - BEM-Naming
+
+### Legal-services
+
+- HTML
+- CSS
+- JQuery
+- Flexbox
+- BEM-Naming
+- Fansybox
+- IcoMoon
