@@ -12,69 +12,77 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header__top clearfix">
-            <div class="container">
-                <a class="header__phone" href="tel:380963092145">+38 (096) 309 21 45</a>
-                <a class="header__email" href="#">layout585@gmail.com</a>
-                <a data-fancybox data-src="#modal" href="javascript:;" class="header__btn" href="#">Бесплатная 
-                    консультация</a>
-            </div>
-        </div>
-        <div class="header__content">
-            <div class="container">
-                <div class="header__inner">
-                    <div class="header__logo">
-                        <a href="#">
-                            <img src="img/logo.png" alt="">
-                        </a>
-                    </div>
-                    <nav class="header__nav">
-                        <ul>
-                            <li><a href="#">Главная</a></li>
-                            <li><a href="#">О компании</a></li>
-                            <li><a href="#">Услуги</a></li>
-                            <li><a href="#">Контакт</a></li>
-                        </ul>
-                    </nav>
+    <div id="wrapper">
+        <header class="header">
+            <div class="header__top clearfix">
+                <div class="container">
+                    <a class="header__phone" href="tel:380963092145">+38 (096) 309 21 45</a>
+                    <a class="header__email" href="#">layout585@gmail.com</a>
+                    <a data-fancybox data-src="#modal" href="javascript:;" class="header__btn" href="#">Бесплатная 
+                        консультация</a>
                 </div>
             </div>
-        </div>
-    </header>
+            <div class="header__content">
+                <div class="container">
+                    <div class="header__inner">
+                        <div class="header__logo">
+                            <a href="#">
+                                <img src="img/logo.png" alt="">
+                            </a>
+                        </div>
+                        <nav class="header__nav">
+                            <ul>
+                                <li><a href="#">Главная</a></li>
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#">Контакт</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-    <section class="slider">
-        <div class="container">
-            <div class="slider__inner">
-                <div class="slider__item">
-                    <div class="slider__title">
-                        <h1>КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ</h1>
-                    </div>
-                    <div class="slider__text">
-                        <p>Полное прекращение существования юридического лица с сохранением легальности всей предыдущей 
-                            деятельности.</p>
-                    </div>
-                    <div class="slider__btn">
-                        <a href="#">Оставить заявку</a>
+        <main class="page">
+            <section class="slider">
+                <div class="container">
+                    <div class="slider__inner">
+                        <div class="slider__item">
+                            <div class="slider__item-content">
+                                <h1 class="slider__title">КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ</h1>
+                                <p class="slider__text">Полное прекращение существования юридического лица с 
+                                    сохранением легальности всей предыдущей деятельности.</p>
+                                <a data-fancybox data-src="#modal" href="javascript:;" class="slider__btn default-btn" 
+                                href="#">Оставить заявку</a>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__item-content">
+                                <h1 class="slider__title">КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ</h1>
+                                <p class="slider__text">Полное прекращение существования юридического лица с
+                                    сохранением легальности всей предыдущей деятельности.</p>
+                                <a data-fancybox data-src="#modal" href="javascript:;" class="slider__btn default-btn" 
+                                href="#">Оставить заявку</a>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__item-content">
+                                <h1 class="slider__title">КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ</h1>
+                                <p class="slider__text">Полное прекращение существования юридического лица с
+                                    сохранением легальности всей предыдущей деятельности.</p>
+                                <a data-fancybox data-src="#modal" href="javascript:;" class="slider__btn default-btn"
+                                    href="#">Оставить заявку</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="slider__item">
-                    <div class="slider__title">
-                        <h1>КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ</h1>
-                    </div>
-                    <div class="slider__text">
-                        <p>Полное прекращение существования юридического лица с сохранением легальности всей предыдущей 
-                            деятельности.</p>
-                    </div>
-                    <div class="slider__btn">
-                        <a href="#">Оставить заявку</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            </section>
+        </main>
+    </div>
 
     <div id="modal">
         <h2>Hello!</h2>
@@ -84,6 +92,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./js/jquery.fancybox.min.js"></script>
+    <script src="./js/slick.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

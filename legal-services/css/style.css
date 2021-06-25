@@ -23,10 +23,28 @@ body {
     font-size: 14px;
     line-height: 18px;
     color: #5e5e5e;
+    height: 100%;
     /* font-family: 'Roboto', sans-serif; */
 }
 
+#wrapper {
+    overflow: hidden;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    flex: 1 1 auto;
+}
+
+.page {
+    overflow: hidden;
+}
+
 .container {
+    width: 100%;
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
@@ -129,4 +147,104 @@ body {
     background-size: cover;
     background-position: center;
     min-height: 500px;
+}
+
+.slider__inner {
+    position: relative;
+}
+
+.slider__item-content {
+    text-align: center;
+    padding-top: 110px;
+    max-width: 665px;
+    margin: 0 auto;
+}
+
+.slider__title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;   
+    letter-spacing: .5px; 
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 22px;
+}
+
+.slider__text {
+    font-size: 18px;
+    line-height: 24px;  
+    color: #d3d2d2;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+/* .slider__btn {
+
+} */
+
+.default-btn {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #fff;
+    padding: 8px 30px 8px 24px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #ffc222;
+    border-right-width: 20px;
+    position: relative;
+    outline: none;
+}
+
+.default-btn:after {
+    content: "\f105";
+    font-family: 'icons';
+    position: absolute;
+    top: 50%;
+    right: -12px;
+    transform: translateY(-50%);
+}
+
+.slick-btn {
+    position: absolute;
+    top: 70%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    z-index: 3;
+    cursor: pointer;
+    outline: none;
+    background-color: #ffc222;
+}
+
+.slick-btn:before {
+    font-family: 'icons';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.slick-btn.slick-disabled {
+    background-color: transparent;
+    cursor: not-allowed;
+}
+.slick-next {
+    right: 0;
+}
+
+.slick-next:before {
+    content: "\f105";
+}
+
+.slick-prev {
+    left: 0;
+}
+
+.slick-prev::before {
+    content: "\f104";
 }
