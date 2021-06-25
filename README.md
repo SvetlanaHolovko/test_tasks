@@ -21,3 +21,4 @@
 - BEM-Naming
 - Fansybox
 - IcoMoon
+- Slick-slider
