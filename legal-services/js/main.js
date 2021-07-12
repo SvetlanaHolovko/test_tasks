@@ -9,7 +9,8 @@ $(function () {
     $('select').styler();
 
     $('.header__btn-menu').on('click', function () {
-        $('.header__nav').slideToggle();
+        $('.header__nav ul').slideToggle();
     });
+
 
 });

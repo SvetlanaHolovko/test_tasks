@@ -12,7 +12,7 @@ body {
     font-family: 'PT Serif', serif;
     font-weight: 400;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.5;
     color: #5e5e5e;
     height: 100%;
     /* font-family: 'Roboto', sans-serif; */
@@ -45,7 +45,7 @@ main {
 .header {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    line-height: 36px;
+    line-height: 2;
 }
 
 .header__top {
@@ -58,6 +58,10 @@ main {
     background-color: #ffc222;
     padding: 5px 20px 4px 50px;
     position: relative;
+    transition: background-color .2s linear;
+}
+.header__btn:hover {
+    background-color: rgb(185, 136, 12);
 }
 
 .header__btn:before {
@@ -73,9 +77,15 @@ main {
 .footer__map {
     font-size: 14px;
     letter-spacing: .25px;
-    line-height: 45px;
+    line-height: 1.71;
     color: #cbcacb;
     position: relative;
+    transition: color .2s linear;
+}
+.header__phone:hover,
+.header__email:hover,
+.footer__map:hover {
+    color: #fff;
 }
 
 .header__phone {
@@ -110,6 +120,7 @@ main {
 .header__inner {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header__btn-menu {
@@ -117,6 +128,7 @@ main {
     font-size: 28px;
     cursor: pointer;
 }
+
 .header__nav li {
     display: inline-block;
 }
@@ -127,6 +139,8 @@ main {
 
 .header__nav a {
     color: #323232;
+    font-size: 16px;
+    line-height: 2.25;
     border: 1px solid transparent;
     padding: 0 16px;
     transition: border-color .2s linear;
@@ -160,7 +174,7 @@ main {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 30px;
-    line-height: 36px;   
+    line-height: 1.2;   
     letter-spacing: .5px; 
     color: #fff;
     text-transform: uppercase;
@@ -170,7 +184,7 @@ main {
 
 .slider__text {
     font-size: 18px;
-    line-height: 24px;  
+    line-height: 1.33;  
     color: #d3d2d2;
     margin: 0;
     margin-bottom: 40px;
@@ -180,7 +194,7 @@ main {
 .default-btn {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     font-weight: 500;
     color: #fff;
     padding: 8px 30px 8px 24px;
@@ -190,6 +204,12 @@ main {
     border-right-width: 20px;
     position: relative;
     outline: none;
+    transition: color .2s linear, background-color .2s linear;
+}
+
+.default-btn:hover {
+    background-color: beige;
+    color: black;
 }
 
 .default-btn:after {
@@ -304,11 +324,17 @@ main {
     display: inline-block;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.71;
     color: #373636;
     letter-spacing: 0.25px;
     padding: 10px 40px;
     border: 3px solid #e6e6e6;
+    transition: background-color .2s linear;
+}
+
+.services__title-btn a:hover,
+.news__title-btn a:hover {
+    background-color: #ffc222;
 }
 
 .services__items {
@@ -345,7 +371,7 @@ main {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.33;
     color: #212020;
     margin-bottom: 25px;
 }
@@ -369,6 +395,11 @@ main {
     font-family: 'Roboto', sans-serif;
     color: #050505;
     border-bottom: 1px solid #050505;
+    transition: border-bottom .2s linear;
+}
+
+.services__item-link:hover {
+    border-bottom: none;
 }
 
 .services__btn {
@@ -395,13 +426,13 @@ main {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 24px;
-    line-height: 24px;
+    line-height: 1.5;
     color: #fff;
     margin-bottom: 25px;
 }
 
 .about__content p {
-    line-height: 24px;
+    line-height: 1.71;
     letter-spacing: 0.1px;
     color: #d3d2d2;
     margin-bottom: 30px;
@@ -452,7 +483,7 @@ main {
     width: 100%;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    line-height: 36px;
+    line-height: 2.57;
     color: #282828;
     margin-bottom: 9px;
 }
@@ -462,7 +493,7 @@ main {
     border: 1px solid #e6e6e6;
     outline: none;
     height: 40px;
-    padding: 0 15px;
+    padding: 15px;
 }
 
 .form__box-inner .jq-selectbox.jqselect {
@@ -535,7 +566,7 @@ main {
 }
 
 .form__box-inner textarea {
-    height: 210px;
+    min-height: 210px;
     margin-bottom: 40px;
     resize: none;
 }
@@ -600,7 +631,7 @@ main {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.33;
     margin-bottom: 15px;
     padding-top: 60px;
 }
@@ -608,12 +639,12 @@ main {
 .advantages__item p {
     color: #d3d2d2;
     letter-spacing: 0.1px;
-    line-height: 24px;
+    line-height: 1.71;
 }
 
 /* News */
 .news {
-    padding: 50px 0 110px;
+    padding: 50px 0 100px;
     background-color: #f9f9f9;
 }
 
@@ -642,7 +673,7 @@ main {
     width: 65px;
     height: 30px;
     text-align: center;
-    line-height: 30px;
+    line-height: 1.13;
     background-color: #ffc222;
     position: absolute;
     top: 0;
@@ -651,7 +682,7 @@ main {
 
 .news__slider-inner .slick-btn {
     top: auto;
-    bottom: -80px;
+    bottom: -95px;
 }
 
 .news__slider-inner .slick-next {
@@ -682,7 +713,7 @@ main {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.33;
     letter-spacing: 0.5px;
     color: #242424;
     margin-bottom: 15px;
@@ -713,18 +744,18 @@ main {
 .news__blog-item {
     width: 50%;
     padding: 0 15px;
-    position: relative;
-    
 }
 
 .news__img {
     display: inline-block;
     overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
 }
 
 .news__img img {
     display: block;
-    transition: 1s;
+    transition: transform .5s linear;
     object-fit: cover;
     width: 100%;
 }
@@ -750,7 +781,7 @@ main {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;   
-    line-height: 18px;
+    line-height: 1.13;
     letter-spacing: 0.5px;
     color: #242424;
     margin-bottom: 15px;
@@ -779,7 +810,7 @@ main {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;   
-    line-height: 36px;
+    line-height: 2.25;
     max-width: 365px;
     padding: 20px 0 25px;
 }
@@ -793,7 +824,7 @@ main {
 
 .footer__left p {
     font-size: 14px;   
-    line-height: 18px;
+    line-height: 1.3;
     color: #d3d2d2;
     margin-bottom: 20px;
 }
@@ -808,7 +839,7 @@ main {
 .footer__email,
 .footer__map {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     padding-left: 33px;
 }
 
@@ -825,6 +856,7 @@ main {
 }
 
 .footer__right {
+    width: 100%;
     max-width: 635px;
     padding: 40px 0 45px;
 }
@@ -844,7 +876,7 @@ main {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 12px;   
-    line-height: 24px;
+    line-height: 2;
     letter-spacing: 0.5px;
     color: #fff;
 }
