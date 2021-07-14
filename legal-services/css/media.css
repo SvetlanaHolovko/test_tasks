@@ -14,6 +14,9 @@
     .form__inner {
         background-image: none;
     }
+    .form__box-inner {
+        padding-right: 15px;
+    }
     .form__box-left {
         max-width: 300px;
     }
@@ -61,38 +64,6 @@
     .header__top {
         text-align: center;
     }
-    /* .header__btn-menu {
-        display: block;
-        z-index: 4;
-    }
-    .header__nav ul {
-        display: none;
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin-top: 20px;
-        z-index: 3;
-    }
-    .header__nav li {
-        display: block;
-    }
-    .header__nav a {
-        display: block;
-        background-color: #ffc222;
-        text-align: center;
-        border-top: 1px solid #fff;
-        border-bottom: 1px solid #fff;
-        padding: 10px 7px;
-        font-size: 18px;
-        transition: background-color .2s linear;
-    }
-    .header__nav a:hover {
-        background-color: beige;
-    }
-    
-    .header__nav li + li {
-        padding-left: 0px;
-    } */
     .slider {
         min-height: 300px;
     }
