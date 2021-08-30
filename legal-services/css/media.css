@@ -15,7 +15,7 @@
         background-image: none;
     }
     .form__box-inner {
-        padding-right: 15px;
+        padding-right: 8px;
     }
     .form__box-left {
         max-width: 300px;
@@ -54,6 +54,9 @@
     }
     .footer__right iframe {
         width: 100%;
+    }
+    .form__box-right {
+        padding: 0 10px;
     }
 }
 
@@ -96,6 +99,10 @@
         margin-bottom: 30px;
         justify-content: center;
     }
+    .services__top,
+    .news__top {
+        margin-right: 0;
+    }
     .services__title {
         padding-top: 20px;
     }
@@ -126,6 +133,7 @@
     }
     .form__btn {
         float: none;
+        margin: 0 auto;
     }
     .advantages__item {
         width: 50%;
@@ -170,6 +178,9 @@
     .header__nav li + li {
         padding-left: 0px;
     }
+    .form__inner {
+        margin-right: 0;
+    }
 }
 
 @media(max-width: 567px) {
@@ -188,12 +199,16 @@
     .services__item-link {
         margin-bottom: 20px;
     }
+    .services__btn {
+        margin: 0 auto;
+    }
     .form__box-left {
         max-width: 100%;
     }
     .form__box-right {
         max-width: 100%;
-        margin: 0 10px 0 0;
+        margin-left: 0;
+        padding: 0;
     }
     .advantages__inner {
         padding-bottom: 10px;
